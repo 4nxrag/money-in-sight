@@ -105,7 +105,7 @@ export function ExpenseTracker() {
             <CardContent>
               <div className="text-2xl font-bold">
                 <span className={balance >= 0 ? "text-success" : "text-destructive"}>
-                  ${balance.toFixed(2)}
+                  ₹{balance.toFixed(2)}
                 </span>
               </div>
             </CardContent>
@@ -118,7 +118,7 @@ export function ExpenseTracker() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-success">
-                +${totalIncome.toFixed(2)}
+                +₹{totalIncome.toFixed(2)}
               </div>
             </CardContent>
           </Card>
@@ -130,7 +130,7 @@ export function ExpenseTracker() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-destructive">
-                -${totalExpenses.toFixed(2)}
+                -₹{totalExpenses.toFixed(2)}
               </div>
             </CardContent>
           </Card>
